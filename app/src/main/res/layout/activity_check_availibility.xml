@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/xdx"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.gangwars.bookroom.CheckAvailibility">
+
+<TextView
+    android:layout_width="wrap_content"
+  android:gravity="center"
+    android:textColor="#FFFFFF"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/checktexthead"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:textSize="30sp"
+    android:layout_height="wrap_content"
+    android:text="CHECK AVAILIBILITY"
+    android:textStyle="bold"
+
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/statustext"
+        android:layout_margin="10dp"
+      android:layout_below="@id/checktexthead"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:text="STATUS : "
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/status"
+        android:textColor="#FFFFFF"
+        android:layout_alignBaseline="@id/statustext"
+        android:layout_toRightOf="@id/statustext"
+        android:layout_margin="10dp"
+        android:layout_below="@id/checktexthead"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="(no room s"
+        android:textStyle="bold"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@id/status"
+        android:layout_margin="5dp"
+        android:id="@+id/hjh"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/lk"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/row1"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room1"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R01"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room2"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R02"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:id="@+id/room3"
+                        android:layout_weight="2"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R03"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room4"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R04"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room5"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R05"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            //row2
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/row2"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room6"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R06"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room7"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R07"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:id="@+id/room8"
+                        android:layout_weight="2"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R08"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room9"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R09"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room10"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R10"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            //row3
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/row3"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room11"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R11"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room12"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R12"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:id="@+id/room13"
+                        android:layout_weight="2"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R13"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room14"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R14"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room15"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R15"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            //row 4
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/row4"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room16"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room17"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R17"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:id="@+id/room18"
+                        android:layout_weight="2"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R18"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room19"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R19"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_margin="2dp"
+                        android:layout_weight="2"
+                        android:id="@+id/room20"
+                        android:src="@drawable/greencircle"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="R20"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hjh"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="15dp"
+     android:layout_centerHorizontal="true"
+        android:text="Release lock and go to homepage"
+        android:id="@+id/releaseread"
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BookRoom</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splashscreen">Splashscreen</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="title_activity_check_availibility">CheckAvailibility</string>
+    <string name="title_activity_bookroom">Bookroom</string>
+    <string name="title_activity_book_room">BookRoom</string>
+</resources>
